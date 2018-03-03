@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Infrastructure.UnitOfWork.EntityFramework</AssemblyName>
+    <RootNamespace>Infrastructure.UnitOfWork.EntityFramework</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UnitOfWork.Design\UnitOfWork.Design.csproj">
+      <Project>{048F4A08-D7F5-48BC-AB95-14E6265D8286}</Project>
+      <Name>UnitOfWork.Design</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.AutoHistory" Version="2.0.3" />
+  </ItemGroup>
+</Project>

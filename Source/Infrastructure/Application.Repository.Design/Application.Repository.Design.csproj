@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Infrastructure.Application.Repository.Design</AssemblyName>
+    <RootNamespace>Infrastructure.Application.Repository.Design</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Entity.Model\Entity.Model.csproj">
+      <Project>{DB05D84F-FEC7-49BA-AFAE-E05B7B928F9F}</Project>
+      <Name>Entity.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository.Generics.Design\Repository.Generics.Design.csproj">
+      <Project>{C3FCCF2E-F9FC-481B-AE14-B0FEB5AC2272}</Project>
+      <Name>Repository.Generics.Design</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

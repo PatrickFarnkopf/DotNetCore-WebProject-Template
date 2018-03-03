@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Infrastructure.Application.DataAccess</AssemblyName>
+    <RootNamespace>Infrastructure.Application.DataAccess</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.EntityFrameworkCore, Version=2.0.1.0, Culture=neutral, PublicKeyToken=adb9793829ddae60">
+      <HintPath>..\..\..\..\..\..\..\usr\share\dotnet\sdk\NuGetFallbackFolder\microsoft.entityframeworkcore\2.0.1\lib\netstandard2.0\Microsoft.EntityFrameworkCore.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational.Design" Version="2.0.0-preview1-final" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.10-rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Domain\Entity.Model\Entity.Model.csproj">
+      <Project>{DB05D84F-FEC7-49BA-AFAE-E05B7B928F9F}</Project>
+      <Name>Entity.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Application.Repository.Design\Application.Repository.Design.csproj">
+      <Project>{D5238FF2-915B-41F3-87C6-DDDB664D738A}</Project>
+      <Name>Application.Repository.Design</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repository.Generics.EntityFramework\Repository.Generics.EntityFramework.csproj">
+      <Project>{FCCA47AD-52F7-4927-A97E-A8112BE5E382}</Project>
+      <Name>Repository.Generics.EntityFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UnitOfWork.EntityFramework\UnitOfWork.EntityFramework.csproj">
+      <Project>{05C0A19D-A481-4341-8CAE-29197CCA483A}</Project>
+      <Name>UnitOfWork.EntityFramework</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

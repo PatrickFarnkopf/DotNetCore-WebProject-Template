@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Infrastructure.Repository.Generics.EntityFramework</AssemblyName>
+    <RootNamespace>Infrastructure.Repository.Generics.EntityFramework</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Repository.Generics.Design\Repository.Generics.Design.csproj">
+      <Project>{C3FCCF2E-F9FC-481B-AE14-B0FEB5AC2272}</Project>
+      <Name>Repository.Generics.Design</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

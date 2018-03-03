@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>Infrastructure.UnitOfWork.Design</AssemblyName>
+    <RootNamespace>Infrastructure.UnitOfWork.Design</RootNamespace>
+  </PropertyGroup>
+</Project>
